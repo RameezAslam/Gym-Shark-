@@ -1,0 +1,46 @@
+.login-main-container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+.login-container-wrapper {
+    max-width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+}
+.login-container p {
+    font-size: 14px;
+    color: #444444;
+}
+.login-container img {
+    max-width: 6.25rem;
+    margin: auto;
+}
+.login-btn {
+    background-color: #000000;
+    color: white;
+    font-weight: 700;
+    border: 1px solid #000000;
+    border-radius: 2rem;
+    padding: 0.8rem;
+}
+.input-password-container {
+    position: relative;
+}
+.eye-icon-container {
+    position: absolute;
+    top: 31%;
+    right: 1rem;
+}
+.eye-icon {
+   color: #9f9898;;
+}

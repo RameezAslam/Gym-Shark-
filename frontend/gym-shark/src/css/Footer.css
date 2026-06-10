@@ -1,0 +1,144 @@
+.footer-section-one h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+.footer-section-one, .footer-section-two, .footer-section-three, .footer-section-four {
+    margin-top: 4rem !important;
+}
+.footer-section-five  {
+    margin-top: 3rem !important;
+}
+.footer-section-one ul li a {
+    color: #444444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.footer-section-two h1 {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+}
+.footer-section-two h2 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.8rem;
+}
+@media (min-width: 320px)  and (max-width: 768px) {
+    .footer-section-two h1 {
+        font-size: 1.6rem;
+    }
+    .footer-section-two h2 {
+        font-size: 1.35rem;
+    }
+}
+.footer-section-two p {
+    font-size: 0.86rem;
+    color: #444444;
+}
+.footer-section-three h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+.footer-section-three ul li a {
+    color: #444444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+.footer-section-three ul li a:hover {
+    color: #000000;
+}
+.promo-card {
+    max-width: 11rem;
+    height: 8rem;
+    cursor: pointer;
+    margin: 0;
+}
+.img-wrapper {
+    max-width: 100%;
+}
+.img-wrapper img {
+    width: 100%;
+}
+figcaption {
+    background-color: #E7E7E7;
+    padding: 0.4rem;
+    font-weight: 700;
+    font-size: 13px;
+}
+.img-container {
+    max-width: 2.8rem;
+}
+.img-container img {
+    width: 2.8rem;
+    cursor: pointer;
+}
+.icons {
+    font-size: 1rem;
+}
+.icon-bg {
+    background-color: black;
+    width: 1.5rem;
+    padding: 0rem;
+    border: 1px solid black;
+    border-radius: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+}
+.footer-section-four p{
+    font-size: 0.86rem;
+    color: #444444;
+    margin: 0;
+}
+.us-flag {
+    width: 1.56rem;
+}
+.footer-section-four span {
+    color: rgb(175, 171, 171);
+}
+.footer-four-right-section p{
+    cursor: pointer;
+}
+.footer-four-right-section p:hover {
+    color: #000000;
+}
+.footer-terms p {
+    font-weight: 500;
+}
+.accordion-button {
+    font-weight: 700;
+}
+.accordion-button::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-image: none; /* removes default SVG arrow */
+    width: auto;
+    height: auto;
+}
+.accordion-button:not(.collapsed)::after {
+    content: "-";
+    transform: none; /* removes Bootstrap's rotation animation */
+}
+.promo-card-slider {
+    display: none !important;
+}
+@media (min-width: 320px) and (max-width: 576px) {
+    .promo-card-slider {
+        display: block !important;
+     }
+} 
+
