@@ -108,7 +108,7 @@ return (
                 name="Payment Radio"
                 id="payment-radio"
                 checked={isCardSelected}
-                onChange={() => setIsCardSelected(!isCardSelected)}
+                onClick={() => setIsCardSelected(!isCardSelected)}
             />
             <div className="d-flex align-items-center justify-content-between">
                 <label className="form-check-label fw-bold" htmlFor="payment-radio">
@@ -127,7 +127,7 @@ return (
 {isCardSelected && (
   <div className="credit-debit-form">
     <div className="input-group">
-      <input type="number" className="form-control p-2" placeholder="Card number" />
+      <input type='text' className="form-control p-2" placeholder="Card number" />
       <span className="input-group-text"><CiLock /></span>
     </div>
     <div className="row">
@@ -146,8 +146,8 @@ return (
     </div>
   </div>
 )}
-  <div>
-      
+  <div className='payments-radio-btn'>
+
   </div>
    </div>
   </form>
