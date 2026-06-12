@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-          <main className='min-vh-100'>
+          <main className='min-vh-100 main-outlet'>
               <Outlet />
           </main>
       <Footer />

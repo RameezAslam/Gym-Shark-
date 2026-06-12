@@ -30,8 +30,8 @@ const subMenuLinks = {
 // ────────────────────────────────────────────────────────────────────────────
 
 export default function MobileDrawer({ links }) {
-  const [level, setLevel]           = useState(1); // 1 | 2 | 3
-  const [activeCategory, setActiveCategory] = useState(null); // e.g. "Women"
+  const [level, setLevel] = useState(1); // 1 | 2 | 3
+  const [activeCategory, setActiveCategory] = useState("Women"); // e.g. "Women"
   const [activeMegaLink, setActiveMegaLink] = useState(null); // e.g. "Trending"
 
   const goToLevel2 = (category) => {

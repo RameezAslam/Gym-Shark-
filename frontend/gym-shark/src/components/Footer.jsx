@@ -24,10 +24,9 @@ import MobileFooterAccordion from './sub-components/MobileFooterAccordion'
 import ProductSlider from './sub-components/ProductSlider'
 
 const Footer = () => {
-  return (
-    <section className='container-fluid px-2 px-sm-3 px-lg-5 py-3 footer-section'>
+return (
+  <section className='container-fluid px-2 px-sm-3 px-lg-5 py-3 footer-section'>
      <footer>
-
       <div className="row footer-section-one flex-column gap-3 gap-md-0 flex-md-row">
         <div className="col-md-3">
             <div className="d-flex flex-column gap-2">
@@ -219,19 +218,91 @@ const Footer = () => {
             </div>
           </div>
       </div>
-      <div className="row footer-section-four flex-column gap-5 gap-lg-0 flex-lg-row align-items-end align-items-lg-center">
-          <div className="col-12 col-sm-6">
-            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start gap-2">
-             <div className='img-container'> <img src={visa} alt="visa" /> </div>
-               <div className='img-container'><img src={masterCard} alt="mastercard" /></div>
-               <div className='img-container'> <img src={paypal} alt="paypal" /></div>
-               <div className='img-container'><img src={applePay} alt="applePay" /></div>
-               <div className='img-container'> <img src={amex} alt="amex" /></div>
-               <div className='img-container'><img src={klarna} alt="klarna" /></div>
-               <div className='img-container'> <img src={afterPay} alt="afterPay" /></div>   
+     <div className="footer-section-four">
+
+    {/* ============================================ */}
+    {/* BELOW LG — handles md (Image 1) & <md (Image 2) */}
+    {/* ============================================ */}
+    <div className="row d-lg-none g-4">
+
+        {/* Social Icons */}
+        <div className="col-12 col-md-6 order-1 order-md-2">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-end gap-3">
+                <div className='icon-bg'><FaDiscord className='icons text-white' /></div>
+                <div className='icon-bg'><FaFacebook className='icons text-white' /></div>
+                <div className='icon-bg'><FaPinterest className='icons text-white' /></div>
+                <div className='icon-bg'><FaYoutube className='icons text-white' /></div>
+                <div className='icon-bg'><FaInstagram className='icons text-white' /></div>
+                <div className='icon-bg'><FaXTwitter className='icons text-white' /></div>
+                <div className='icon-bg'><FaTiktok className='icons text-white' /></div>
             </div>
-          </div>
-          <div className="col-12 col-sm-6">
+        </div>
+
+        {/* Terms Links */}
+        <div className="col-12 col-md-6 order-2 order-md-1">
+            <div className="d-flex flex-column align-items-center align-items-md-start gap-2 footer-terms">
+                <p>Terms & Conditions</p>
+                <p>Terms of Use</p>
+                <p>Privacy Notice</p>
+                <p>Cookie Policy</p>
+                <p>Modern Slavery</p>
+            </div>
+        </div>
+
+        {/* Country / Language Selectors */}
+        <div className="col-12 col-md-6 order-3">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-start gap-2">
+                <img className='us-flag' src={flag} alt="US Flag" />
+                <div className='d-flex align-items-center gap-2'>
+                    <p className="mb-0">US</p>
+                    <MdKeyboardArrowDown />
+                </div>
+                <div className='d-flex align-items-center gap-2'>
+                    <p className="mb-0">English</p>
+                    <MdKeyboardArrowDown />
+                </div>
+            </div>
+        </div>
+
+        {/* Payment Icons */}
+        <div className="col-12 col-md-6 order-4">
+            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-end gap-2">
+                <div className='img-container'><img src={visa} alt="visa" /></div>
+                <div className='img-container'><img src={masterCard} alt="mastercard" /></div>
+                <div className='img-container'><img src={paypal} alt="paypal" /></div>
+                <div className='img-container'><img src={applePay} alt="applePay" /></div>
+                <div className='img-container'><img src={amex} alt="amex" /></div>
+                <div className='img-container'><img src={klarna} alt="klarna" /></div>
+                <div className='img-container'><img src={afterPay} alt="afterPay" /></div>
+            </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="col-12 order-5">
+            <p className="text-center text-md-start mb-0">© 2026 | Gymshark Limited | All Rights Reserved. | We Do Gym.</p>
+        </div>
+
+    </div>
+
+
+    {/* ============================================ */}
+    {/* LG AND UP — your existing layout (unchanged) */}
+    {/* ============================================ */}
+    <div className="row d-none d-lg-flex flex-lg-row align-items-lg-center">
+
+        <div className="col-12 col-sm-6">
+            <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start gap-2">
+                <div className='img-container'> <img src={visa} alt="visa" /> </div>
+                <div className='img-container'><img src={masterCard} alt="mastercard" /></div>
+                <div className='img-container'> <img src={paypal} alt="paypal" /></div>
+                <div className='img-container'><img src={applePay} alt="applePay" /></div>
+                <div className='img-container'> <img src={amex} alt="amex" /></div>
+                <div className='img-container'><img src={klarna} alt="klarna" /></div>
+                <div className='img-container'> <img src={afterPay} alt="afterPay" /></div>
+            </div>
+        </div>
+
+        <div className="col-12 col-sm-6">
             <div className="d-flex align-items-center justify-content-center justify-content-sm-end gap-3">
                 <div className='icon-bg'><FaDiscord className='icons text-white' /></div>
                 <div className='icon-bg'><FaFacebook className='icons text-white' /></div>
@@ -241,41 +312,44 @@ const Footer = () => {
                 <div className='icon-bg'><FaXTwitter className='icons text-white' /></div>
                 <div className='icon-bg'><FaTiktok className='icons text-white' /></div>
             </div>
-          </div>
-          <div className="col-12 col-lg-4 footer-four-left-section order-2 order-lg-1 mt-5">
+        </div>
+
+        <div className="col-12 col-lg-4 footer-four-left-section order-2 order-lg-1 mt-5">
             <div className="d-flex justify-content-start align-items-center">
-               <p>© 2026 | Gymshark Limited | All Rights Reserved. | We Do Gym.</p>
+                <p>© 2026 | Gymshark Limited | All Rights Reserved. | We Do Gym.</p>
             </div>
-          </div>
-          <div className="col-12 col-sm-6 col-lg-8 footer-four-right-section order-1 order-lg-2 mt-5">
-              <div className="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-start align-items-lg-center gap-2">
-                  <div className='d-flex flex-column flex-lg-row justify-content-center align-items-start align-items-lg-center gap-3 footer-terms'> 
+        </div>
+
+        <div className="col-12 col-sm-6 col-lg-8 footer-four-right-section order-1 order-lg-2 mt-5">
+            <div className="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-start align-items-lg-center gap-2">
+                <div className='d-flex flex-column flex-lg-row justify-content-center align-items-start align-items-lg-center gap-3 footer-terms'>
                     <p>Terms & Conditions</p>
                     <p>Terms of Use</p>
                     <p>Privacy Notice</p>
                     <p>Cookie Policy</p>
                     <p>Modern Slavery</p>
-                  </div>
-                  <div className='d-flex align-items-center mt-4 mt-lg-0'>
+                </div>
+                <div className='d-flex align-items-center mt-4 mt-lg-0'>
                     <span className='mx-0 mx-lg-3 d-none d-lg-block'>|</span>
                     <div className="d-flex align-items-center gap-2">
-                       <img className='us-flag' src={flag} alt="US Flag" />
-                       <div className='d-flex align-items-center gap-2'>
+                        <img className='us-flag' src={flag} alt="US Flag" />
+                        <div className='d-flex align-items-center gap-2'>
                             <p>US</p>
                             <MdKeyboardArrowDown />
-                       </div>
-                       <div className='d-flex align-items-center gap-2'>
-                           <p>English</p>
-                           <MdKeyboardArrowDown />
-                       </div>
+                        </div>
+                        <div className='d-flex align-items-center gap-2'>
+                            <p>English</p>
+                            <MdKeyboardArrowDown />
+                        </div>
                     </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
           
-      </footer>
-    </section>
+   </footer>
+</section>
   )
 }
 

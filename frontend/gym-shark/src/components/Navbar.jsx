@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import '../css/Navbar.css'
 import '../css/CartSidebar.css'
 import Offcanvas from "react-bootstrap/Offcanvas";
@@ -18,6 +18,23 @@ import CartSidebar from "./CartSidebar";
 export default function Navbar() {
   const [show, setShow] = useState(false);
   const [openCartSidebar, setOpenCartSidebar] = useState(false);
+  const [hideTopBar, setHideTopBar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 150) {
+        setHideTopBar(true);
+      } else {
+        setHideTopBar(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  }, [])
 
   const navLinks = ["Women", "Men", "Accessories", "Explore"];
 
@@ -54,11 +71,13 @@ export default function Navbar() {
  <>
   <div className="container-fluid p-0">
 
-    <div className="top-bar d-flex align-items-center justify-content-center">
+    <div 
+      className={`top-bar d-flex align-items-center justify-content-center ${hideTopBar ? "hide" : ""}`}
+     >
       <a href="#">Get $10 off when you refer a friend</a>
     </div>
 
-    <nav className="nav-bar-css">
+    <nav className={`nav-bar-css ${hideTopBar ? "no-gap-top" : ""}`}>
       <div className="d-flex align-items-center gap-3">
         <button
           className="navbar-toggler border-0 d-lg-none"

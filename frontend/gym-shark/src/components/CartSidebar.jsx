@@ -17,10 +17,9 @@ import { Link } from 'react-router-dom';
 
 const CartSidebar = ({ onClose }) => {
 
-  return (
-<div className='cart-sidebar-container'>
-
-  <div className="cart-sidebar-header d-flex align-items-center justify-content-between">
+return (
+  <div className='cart-sidebar-container'>
+    <div className="cart-sidebar-header d-flex align-items-center justify-content-between">
     <div className='mb-0'><h2>YOUR BAG</h2></div>
     <div className='d-flex align-items-center justify-content-center gap-3'>
       <div className='icon'>
